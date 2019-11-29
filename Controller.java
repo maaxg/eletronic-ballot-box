@@ -11,7 +11,7 @@ import javafx.scene.image.ImageView;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-
+//This file got all the controll from the firts acess screen(login screen)
 public class Controller implements Initializable {
     @FXML
     private Button button;
