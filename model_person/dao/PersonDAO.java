@@ -3,8 +3,10 @@ package model_person.dao;
 import connection.ConnectionFactory;
 import model_person.Person;
 
+import javax.swing.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import java.sql.SQLException;
 
 public class PersonDAO {
@@ -31,6 +33,28 @@ public class PersonDAO {
             return false;
         }
     }
+    public boolean checkLogin(String user, String pass) {
+        con = ConnectionFactory.getConnection();
+        PreparedStatement stmt = null;
+        ResultSet rs= null;
+        boolean check = false;
+        try{
+            stmt = con.prepareStatement("SELECT * FROM person WHERE usuario = ? and senha = ?;");
+            stmt.setString(1, user);
+            stmt.setString(2, pass);
+
+            rs = stmt.executeQuery();
+
+            if(rs.next()){
+                check = true;
+                JOptionPane.showMessageDialog(null, "Sucessufull login");
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        return check;
+    }
+
 
 
 
