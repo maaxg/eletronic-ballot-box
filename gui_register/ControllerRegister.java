@@ -40,9 +40,9 @@ public class ControllerRegister implements Initializable {
     @FXML
     private void handleConfirmButton(ActionEvent e){
         Controller c = new Controller();
-        Person pe = new Person(1,txtNome.getText(), txtData_nasc.getText(), txtCpf.getText(), txtLogin_reg.getText(), txtSenha_reg.getText());
         PersonDAO dao = new PersonDAO();
         try {
+            Person pe = new Person(1,txtNome.getText(), txtData_nasc.getText(), txtCpf.getText(), txtLogin_reg.getText(), txtSenha_reg.getText());
             dao.save(pe);
             JOptionPane.showMessageDialog(null,"Sucessfull registration");
 
