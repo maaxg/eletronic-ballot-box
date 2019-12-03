@@ -12,6 +12,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
+import main.Main;
 import model_person.Person;
 import model_person.dao.PersonDAO;
 
@@ -23,7 +24,6 @@ import java.util.ResourceBundle;
 
 public class Controller implements Initializable {
     public Stage stage_reg = new Stage();
-
     @FXML
     private Button button;
     private Button button1;
@@ -41,8 +41,10 @@ public class Controller implements Initializable {
         String user= txtLogin.getText();
         String pass = txtSenha.getText();
         System.out.println("You clicked here");
-        dao.checkLogin(user, pass);
-        label.setText("Seja bem-vindo " + txtLogin.getText() + ", sua senha é: " + txtSenha.getText());
+        if(dao.checkLogin(user, pass) == true){
+            Main.mainScreen(stage_reg);
+        }
+
 
 
 

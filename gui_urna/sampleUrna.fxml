@@ -29,5 +29,25 @@
                </children></Pane>
          </children>
       </Pane>
+      <Pane layoutX="4.0" layoutY="156.0" prefHeight="239.0" prefWidth="314.0">
+         <children>
+            <Label layoutX="14.0" layoutY="21.0" prefHeight="17.0" prefWidth="32.0" text="CPF:" />
+            <Label layoutX="14.0" layoutY="61.0" prefHeight="17.0" prefWidth="123.0" text="Número do candidato" />
+            <TextField layoutX="14.0" layoutY="86.0" />
+            <TextField fx:id="txtCpf_masc" layoutX="14.0" layoutY="38.0" />
+            <Button layoutX="231.0" layoutY="200.0" mnemonicParsing="false" style="-fx-background-color: rgba(0, 177, 106, 1);" text="Confirmar" />
+            <Button layoutX="171.0" layoutY="200.0" mnemonicParsing="false" style="-fx-background-color: rgb(249, 105, 14);" text="Corrigir" />
+            <Button layoutX="111.0" layoutY="200.0" mnemonicParsing="false" style="-fx-background-color: rgba(242, 241, 239, 1);" text="Branco" />
+         </children>
+      </Pane>
+      <Pane layoutX="313.0" layoutY="152.0" prefHeight="239.0" prefWidth="285.0">
+         <children>
+            <Label layoutX="105.0" layoutY="41.0" prefHeight="26.0" prefWidth="81.0" text="Candidato">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
    </children>
 </AnchorPane>
