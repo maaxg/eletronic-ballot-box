@@ -47,7 +47,9 @@ public class PersonDAO {
 
             if(rs.next()){
                 check = true;
-                JOptionPane.showMessageDialog(null, "Sucessufull login");
+               JOptionPane.showMessageDialog(null,"Sucessfull login", "Login", JOptionPane.INFORMATION_MESSAGE);
+            }else{
+                JOptionPane.showMessageDialog(null,"Something is wrong", "ERROR!", JOptionPane.WARNING_MESSAGE);
             }
         } catch (SQLException e) {
             e.printStackTrace();

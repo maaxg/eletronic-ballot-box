@@ -46,18 +46,18 @@
             <Label layoutX="16.0" layoutY="6.0" text="Nome:" />
             <Label layoutX="13.0" layoutY="48.0" text="CPF:" />
             <Label layoutX="13.0" layoutY="90.0" text="CEP:" />
-            <Label layoutX="14.0" layoutY="132.0" text="Rua" />
-            <Label layoutX="18.0" layoutY="174.0" text="Bairro" />
-            <TextField layoutX="14.0" layoutY="23.0" />
-            <TextField layoutX="14.0" layoutY="65.0" />
-            <TextField layoutX="14.0" layoutY="107.0" />
-            <TextField layoutX="14.0" layoutY="149.0" />
-            <TextField layoutX="14.0" layoutY="191.0" />
+            <Label layoutX="14.0" layoutY="132.0" text="Bairro" />
+            <Label layoutX="18.0" layoutY="174.0" text="Rua" />
+            <TextField fx:id="txtNome_eleitor" layoutX="14.0" layoutY="23.0" />
+            <TextField fx:id="txtCpf_eleitor" layoutX="14.0" layoutY="65.0" />
+            <TextField fx:id="txtCep_eleitor" layoutX="14.0" layoutY="107.0" />
+            <TextField fx:id="txtBairro_eleitor" layoutX="14.0" layoutY="149.0" />
+            <TextField fx:id="txtRua_eleitor" layoutX="14.0" layoutY="191.0" />
             <Label layoutX="18.0" layoutY="216.0" text="Número" />
-            <TextField layoutX="14.0" layoutY="233.0" />
+            <TextField fx:id="txtNumero_eleitor" layoutX="14.0" layoutY="233.0" />
             <Button layoutX="54.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: rgba(30, 139, 195, 1);" text="  Novo" />
             <Button layoutX="129.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: rgba(30, 139, 195, 1);" text="    Excluir" />
-            <Button layoutX="205.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: rgba(30, 139, 195, 1);" text="   Salvar" />
+            <Button layoutX="205.0" layoutY="272.0" mnemonicParsing="false" onAction="#salvar_eleitor" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: rgba(30, 139, 195, 1);" text="   Salvar" />
             <Label layoutX="62.0" layoutY="276.0" prefHeight="17.0" prefWidth="20.0">
                <effect>
                   <ImageInput>
