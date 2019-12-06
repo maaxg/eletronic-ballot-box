@@ -22,7 +22,9 @@ Also, you can use this project as you wish.
 **Some observations**
 
 1 - The project isn't finallized yet it stills happening and i'm still working on it.
+
 2 - I do not think in a solution to my identifeirs(ID's) so i'm using integer numbers(1,2,3) on constructors, so if you have any idea to change this, let me know.
+
 3 - The Data base that i'm using it's mysql then i guess you will have to change the local host path in the ConnectionFactory class.
 
           
