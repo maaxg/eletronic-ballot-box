@@ -11,4 +11,4 @@ Elletronic Ballot box
 ![](project_images/eleitor.png)
 ![](project_images/urna.png)
 ![](project_images/candidato.png)
-![](project_images/partido.png)
+![](project_images/partidos.png)
