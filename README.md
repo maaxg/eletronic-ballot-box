@@ -10,4 +10,4 @@ Elletronic Ballot box
 <img src="project_images/candidato.png" width = 300>
 <img src="project_images/partidos.png" width = 300>
 
-#**Why?**
+<title **Why?**/>
