@@ -1,7 +1,7 @@
 package gui_urna;
 
 
-import class_methods.TextFieldFormatter;
+import tft_formatter.TextFieldFormatter;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;

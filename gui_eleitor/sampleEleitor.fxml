@@ -29,12 +29,11 @@
         <content>
           <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="258.0" prefWidth="319.0">
                <children>
-                  <TableView prefHeight="252.0" prefWidth="318.0">
+                  <TableView fx:id="tableEleitor" prefHeight="252.0" prefWidth="318.0">
                     <columns>
-                      <TableColumn prefWidth="75.0" text="C1" />
-                      <TableColumn prefWidth="75.0" text="C2" />
-                        <TableColumn prefWidth="75.0" text="C3" />
-                        <TableColumn prefWidth="75.0" text="C4" />
+                      <TableColumn fx:id="columnNome" prefWidth="92.0" text="Nome" />
+                      <TableColumn fx:id="columnCpf" prefWidth="87.0" text="CPF" />
+                        <TableColumn fx:id="columnCep" prefWidth="103.0" text="CEP" />
                     </columns>
                   </TableView>
                </children>
@@ -49,8 +48,8 @@
             <Label layoutX="14.0" layoutY="132.0" text="Bairro" />
             <Label layoutX="18.0" layoutY="174.0" text="Rua" />
             <TextField fx:id="txtNome_eleitor" layoutX="14.0" layoutY="23.0" />
-            <TextField fx:id="txtCpf_eleitor" layoutX="14.0" layoutY="65.0" />
-            <TextField fx:id="txtCep_eleitor" layoutX="14.0" layoutY="107.0" />
+            <TextField fx:id="txtCpf_eleitor" layoutX="14.0" layoutY="65.0" onKeyReleased="#tffCpf_masc" />
+            <TextField fx:id="txtCep_eleitor" layoutX="14.0" layoutY="107.0" onKeyReleased="#tffCep_masc" />
             <TextField fx:id="txtBairro_eleitor" layoutX="14.0" layoutY="149.0" />
             <TextField fx:id="txtRua_eleitor" layoutX="14.0" layoutY="191.0" />
             <Label layoutX="18.0" layoutY="216.0" text="Número" />
