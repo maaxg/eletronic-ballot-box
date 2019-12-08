@@ -29,23 +29,59 @@
                </children></Pane>
          </children>
       </Pane>
-      <Pane layoutX="4.0" layoutY="156.0" prefHeight="239.0" prefWidth="314.0">
+      <Pane layoutY="152.0" prefHeight="239.0" prefWidth="314.0">
          <children>
             <Label layoutX="14.0" layoutY="21.0" prefHeight="17.0" prefWidth="32.0" text="CPF:" />
-            <Label layoutX="14.0" layoutY="61.0" prefHeight="17.0" prefWidth="123.0" text="Número do candidato" />
-            <TextField layoutX="14.0" layoutY="86.0" />
+            <Label layoutX="14.0" layoutY="69.0" prefHeight="17.0" prefWidth="123.0" text="Número do candidato" />
+            <TextField fx:id="txtNumCandidato" layoutX="14.0" layoutY="86.0" onKeyReleased="#mostrarCandidato" />
             <TextField fx:id="txtCpf" layoutX="14.0" layoutY="38.0" onKeyReleased="#tfCpf_mascara" />
-            <Button layoutX="231.0" layoutY="200.0" mnemonicParsing="false" style="-fx-background-color: rgba(0, 177, 106, 1);" text="Confirmar" />
+            <Button layoutX="231.0" layoutY="200.0" mnemonicParsing="false" onAction="#salvarVoto" style="-fx-background-color: rgba(0, 177, 106, 1);" text="Confirmar" />
             <Button layoutX="171.0" layoutY="200.0" mnemonicParsing="false" style="-fx-background-color: rgb(249, 105, 14);" text="Corrigir" />
-            <Button layoutX="111.0" layoutY="200.0" mnemonicParsing="false" style="-fx-background-color: rgba(242, 241, 239, 1);" text="Branco" />
+            <Button layoutX="111.0" layoutY="200.0" mnemonicParsing="false" onAction="#votoBranco" style="-fx-background-color: rgba(242, 241, 239, 1);" text="Branco" />
          </children>
       </Pane>
-      <Pane layoutX="313.0" layoutY="152.0" prefHeight="239.0" prefWidth="285.0">
+      <Pane layoutX="313.0" layoutY="152.0" prefHeight="250.0" prefWidth="285.0">
          <children>
-            <Label layoutX="105.0" layoutY="41.0" prefHeight="26.0" prefWidth="81.0" text="Candidato">
+            <Label layoutX="102.0" layoutY="1.0" prefHeight="26.0" prefWidth="81.0" text="Candidato">
                <font>
                   <Font size="17.0" />
                </font>
+            </Label>
+            <Label fx:id="lbCd30" accessibleRole="IMAGE_VIEW" layoutX="87.0" layoutY="42.0" prefHeight="123.0" prefWidth="110.0" text="cd30" visible="false">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/PC/IdeaProjects/EletronicBallotBox/src/gui_urna/icones_urna/joao%20amoedo.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+            <Label fx:id="lbCd17" accessibleRole="IMAGE_VIEW" layoutX="87.0" layoutY="42.0" prefHeight="200.0" prefWidth="110.0" text="cd17" visible="false">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/PC/IdeaProjects/EletronicBallotBox/src/gui_urna/icones_urna/bolsonaro.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+            <Label fx:id="lbCd13" accessibleRole="IMAGE_VIEW" layoutX="87.0" layoutY="35.0" prefHeight="138.0" prefWidth="123.0" text="cd13" visible="false">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/PC/IdeaProjects/EletronicBallotBox/src/gui_urna/icones_urna/haddad.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+            <Label fx:id="lb18" accessibleRole="IMAGE_VIEW" layoutX="63.0" layoutY="27.0" prefHeight="187.0" prefWidth="171.0" text="cd18" visible="false">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/PC/IdeaProjects/EletronicBallotBox/src/gui_urna/icones_urna/marina.jpg" />
+                     </source>
+                  </ImageInput>
+               </effect>
             </Label>
          </children>
       </Pane>
