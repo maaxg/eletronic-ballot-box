@@ -56,7 +56,7 @@
             </Label>
             <TextField fx:id="txtNumero_candidato" layoutX="14.0" layoutY="128.0" prefHeight="25.0" prefWidth="242.0" />
             <Button fx:id="btnSalvar_candidato" layoutX="182.0" layoutY="174.0" mnemonicParsing="false" onAction="#salvar_candidato" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: rgba(30, 139, 195, 1);" text="     Salvar" />
-            <Button layoutX="97.0" layoutY="174.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: rgba(30, 139, 195, 1);" text="   Excluir" />
+            <Button layoutX="97.0" layoutY="174.0" mnemonicParsing="false" onAction="#excluir_candidato" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: rgba(30, 139, 195, 1);" text="   Excluir" />
             <Button layoutX="10.0" layoutY="174.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="72.0" style="-fx-background-color: rgba(30, 139, 195, 1);" text="   Novo" />
             <ComboBox fx:id="comboPartido" layoutX="14.0" layoutY="82.0" prefHeight="25.0" prefWidth="242.0" promptText="Selecione" />
             <Label layoutX="17.0" layoutY="178.0" prefHeight="17.0" prefWidth="20.0">

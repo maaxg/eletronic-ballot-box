@@ -9,6 +9,8 @@ import tft_formatter.TextFieldFormatter;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.TextField;
+
+import javax.swing.*;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -65,7 +67,7 @@ public class ControllerUrna implements Initializable{
         e.setCpf(txtCpf.getText());
         Urna u = new Urna(e, Integer.parseInt(txtNumCandidato.getText()));
         if(dao.checkCPF(txtCpf.getText())){
-        }else {
+        } else {
             dao.save(u);
         }
         }

@@ -62,5 +62,18 @@ public class CandidatoDAO {
         }
         return cand;
     }
+    public boolean delete(Candidato c){
+        String sql = "DELETE FROM candidato WHERE idcandidato = ?";
+        PreparedStatement stmt = null;
+        try{
+            stmt = con.prepareStatement(sql);
+            stmt.setInt(1, c.getIdcandidato());
+            stmt.executeUpdate();
+            return true;
+        }catch (SQLException ex){
+            System.err.println("Erro " + ex);
+            return false;
+        }
+    }
 
 }

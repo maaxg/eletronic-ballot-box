@@ -44,7 +44,6 @@ public class ControllerCandidato implements Initializable {
 
     private ObservableList<Candidato> obs_cand;
 
-    public List<Partido> part = new ArrayList<>();
     private ObservableList<Partido> obs_part;
 
     @FXML
@@ -64,6 +63,19 @@ public class ControllerCandidato implements Initializable {
     public void comboPartido() {
         obs_part = FXCollections.observableArrayList(dao.findAll());
         comboPartido.setItems(obs_part);
+    }
+    @FXML
+    public void excluir_candidato(){
+        CandidatoDAO dao = new CandidatoDAO();
+        //Partido p = (Partido) comboPartido.getValue();
+        String id = JOptionPane.showInputDialog("Digite o ID do candidato: ");
+        Candidato c = new Candidato(Integer.parseInt(id));
+       // Candidato c = new Candidato(Integer.parseInt(id), txtNome_candidato.getText(), Integer.parseInt(txtNumero_candidato.getText()), p);
+        if(dao.delete(c)){
+            JOptionPane.showMessageDialog(null,"Candidado Excluido com sucesso");
+        }else{
+            JOptionPane.showMessageDialog(null,"Somethings wrong");
+        }
     }
     @FXML
     public void salvar_candidato(ActionEvent e){

@@ -10,6 +10,11 @@ public class Candidato {
 
     public Candidato() {
     }
+
+    public Candidato(int idcandidato) {
+        this.idcandidato = idcandidato;
+    }
+
     public Candidato(int idcandidato, String nome_candidato, int numero, Partido partido) {
         this.idcandidato = idcandidato;
         this.nome_candidato = nome_candidato;
