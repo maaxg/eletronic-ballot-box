@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="477.0" prefWidth="632.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="gui_eleitor.ControllerEleitor">
+   <children>
+      <Pane layoutY="-1.0" prefHeight="157.0" prefWidth="632.0" style="-fx-background-color: rgba(30, 139, 195, 1);">
+         <children>
+            <Label layoutX="287.0" layoutY="98.0" text="Eleitor">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="287.0" layoutY="29.0" prefHeight="69.0" prefWidth="58.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/PC/IdeaProjects/EletronicBallotBox/src/gui_eleitor/icons_eleitor/eleitor.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+         </children></Pane>
+      <ScrollPane layoutX="310.0" layoutY="171.0" prefHeight="252.0" prefWidth="318.0">
+        <content>
+          <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="258.0" prefWidth="319.0">
+               <children>
+                  <TableView fx:id="tableEleitor" prefHeight="252.0" prefWidth="318.0">
+                    <columns>
+                      <TableColumn fx:id="columnNome" prefWidth="92.0" text="Nome" />
+                      <TableColumn fx:id="columnCpf" prefWidth="87.0" text="CPF" />
+                        <TableColumn fx:id="columnCep" prefWidth="103.0" text="CEP" />
+                    </columns>
+                  </TableView>
+               </children>
+            </AnchorPane>
+        </content>
+      </ScrollPane>
+      <Pane layoutX="14.0" layoutY="160.0" prefHeight="307.0" prefWidth="287.0">
+         <children>
+            <Label layoutX="16.0" layoutY="6.0" text="Nome:" />
+            <Label layoutX="13.0" layoutY="48.0" text="CPF:" />
+            <Label layoutX="13.0" layoutY="90.0" text="CEP:" />
+            <Label layoutX="14.0" layoutY="132.0" text="Bairro" />
+            <Label layoutX="18.0" layoutY="174.0" text="Rua" />
+            <TextField fx:id="txtNome_eleitor" layoutX="14.0" layoutY="23.0" />
+            <TextField fx:id="txtCpf_eleitor" layoutX="14.0" layoutY="65.0" onKeyReleased="#tffCpf_masc" />
+            <TextField fx:id="txtCep_eleitor" layoutX="14.0" layoutY="107.0" onKeyReleased="#tffCep_masc" />
+            <TextField fx:id="txtBairro_eleitor" layoutX="14.0" layoutY="149.0" />
+            <TextField fx:id="txtRua_eleitor" layoutX="14.0" layoutY="191.0" />
+            <Label layoutX="18.0" layoutY="216.0" text="Número" />
+            <TextField fx:id="txtNumero_eleitor" layoutX="14.0" layoutY="233.0" />
+            <Button layoutX="54.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: rgba(30, 139, 195, 1);" text="  Novo" />
+            <Button layoutX="129.0" layoutY="272.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: rgba(30, 139, 195, 1);" text="    Excluir" />
+            <Button layoutX="205.0" layoutY="272.0" mnemonicParsing="false" onAction="#salvar_eleitor" prefHeight="25.0" prefWidth="68.0" style="-fx-background-color: rgba(30, 139, 195, 1);" text="   Salvar" />
+            <Label layoutX="62.0" layoutY="276.0" prefHeight="17.0" prefWidth="20.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/PC/IdeaProjects/EletronicBallotBox/src/gui_partidos/icones_part/btn-novo.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+            <Label layoutX="134.0" layoutY="276.0" prefHeight="17.0" prefWidth="20.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/PC/IdeaProjects/EletronicBallotBox/src/gui_partidos/icones_part/btn-excluir.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+            <Label layoutX="205.0" layoutY="276.0" prefHeight="17.0" prefWidth="20.0">
+               <effect>
+                  <ImageInput>
+                     <source>
+                        <Image url="file:/C:/Users/PC/IdeaProjects/EletronicBallotBox/src/gui_partidos/icones_part/btn-salvar.png" />
+                     </source>
+                  </ImageInput>
+               </effect>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
